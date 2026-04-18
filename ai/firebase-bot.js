@@ -1,5 +1,5 @@
 // ════════════════════════════════════════════════════════════
-//  CHATTERBOT FIREBASE LISTENER
+//  ARIA - CHATTERAPP AI ASSISTANT
 //  Connects to ChatterApp Firebase, listens for messages
 //  and auto-replies using the AI brain
 // ════════════════════════════════════════════════════════════
@@ -11,7 +11,7 @@ const { getBotResponse, getSmartReplies } = require('./brain');
 // ─── CONFIG ──────────────────────────────────────────────────
 const FIREBASE_URL  = 'emxt-chatterapp-default-rtdb.firebaseio.com';
 const BOT_PHONE     = '263784869165'; // bot's phone number (no + sign)
-const BOT_NAME      = 'Chatterbot';
+const BOT_NAME      = 'Aria';
 const POLL_INTERVAL = 4000; // check every 4 seconds
 
 // Track which message keys we've already replied to
