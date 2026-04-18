@@ -10,7 +10,7 @@ const knowledge = [
     patterns: ['hi','hello','hey','hii','helo','howdy','sup','yo','what\'s up','whats up','good morning','good afternoon','good evening','morning','afternoon','evening'],
     responses: [
       "Hey there! 👋 Great to see you! How can I help you today?",
-      "Hello! 😊 I'm Chatterbot, your ChatterApp assistant. What can I do for you?",
+      "Hello! 😊 I'm Aria, your ChatterApp assistant. What can I do for you?",
       "Hi! 👋 Welcome to ChatterApp support. What would you like to know?",
       "Hey! 😄 I'm here to help. Ask me anything about ChatterApp!"
     ]
@@ -200,7 +200,7 @@ const knowledge = [
     tag: 'name',
     patterns: ['what is your name','who are you','your name','what are you','introduce yourself','what should i call you'],
     responses: [
-      "🤖 I'm **Chatterbot** — ChatterApp's AI assistant!\n\nI'm here to help you with anything related to ChatterApp. Ask me about features, how to sign up, downloading the app, or just have a chat! 😊"
+      "🤖 I'm **Aria** — ChatterApp's AI assistant!\n\nI'm here to help you with anything related to ChatterApp. Ask me about features, how to sign up, downloading the app, or just have a chat! 😊"
     ]
   },
 ];
