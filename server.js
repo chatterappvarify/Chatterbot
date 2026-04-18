@@ -9,6 +9,7 @@ const path = require('path');
 
 const chatRoutes = require('./routes/chat');
 const { getBotResponse, getSmartReplies } = require('./ai/brain');
+const { startFirebaseBot } = require('./ai/firebase-bot');
 
 const app = express();
 const server = http.createServer(app);
@@ -110,4 +111,7 @@ server.listen(PORT, () => {
   console.log(`\n🚀 Chatterbot AI server running on port ${PORT}`);
   console.log(`🌐 Visit: http://localhost:${PORT}`);
   console.log(`📡 API: http://localhost:${PORT}/api/chat\n`);
+
+  // Start the Firebase bot (live inside ChatterApp)
+  startFirebaseBot();
 });
