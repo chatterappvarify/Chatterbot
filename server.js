@@ -41,7 +41,7 @@ app.use('/api', chatRoutes);
 
 // Health check (Render.com needs this)
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', bot: 'Chatterbot', app: 'ChatterApp', uptime: process.uptime() });
+  res.json({ status: 'ok', bot: 'Aria', app: 'ChatterApp', uptime: process.uptime() });
 });
 
 // Serve chat UI
@@ -60,7 +60,7 @@ io.on('connection', (socket) => {
   // Send welcome message on connect
   socket.emit('bot_message', {
     id: Date.now(),
-    text: `👋 Hey! I'm **Chatterbot**, ChatterApp's AI assistant.\n\nI can help you with questions about ChatterApp, suggest replies, or just have a chat! What can I do for you?`,
+    text: `👋 Hey! I'm **Aria**, ChatterApp's AI assistant.\n\nI can help you with questions about ChatterApp, suggest replies, or just have a chat! What can I do for you?`,
     time: new Date().toISOString(),
     quickReplies: ['What is ChatterApp?', 'How do I sign up?', 'Is it free?', 'Download APK']
   });
@@ -108,7 +108,7 @@ io.on('connection', (socket) => {
 // ─── START SERVER ────────────────────────────────────
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-  console.log(`\n🚀 Chatterbot AI server running on port ${PORT}`);
+  console.log(`\n🚀 Aria AI server running on port ${PORT}`);
   console.log(`🌐 Visit: http://localhost:${PORT}`);
   console.log(`📡 API: http://localhost:${PORT}/api/chat\n`);
 
