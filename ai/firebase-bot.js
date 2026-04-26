@@ -10,7 +10,7 @@ const { getBotResponse, getSmartReplies } = require('./brain');
 
 // ─── CONFIG ──────────────────────────────────────────────────
 const FIREBASE_URL  = 'emxt-chatterapp-default-rtdb.firebaseio.com';
-const BOT_PHONE     = 'aria'; // bot's phone number (no + sign)
+const BOT_PHONE     = '1'; // bot's phone number (no + sign)
 const BOT_NAME      = 'Aria';
 const POLL_INTERVAL = 4000; // check every 4 seconds
 
